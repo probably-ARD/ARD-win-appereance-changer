@@ -6,10 +6,13 @@ from wins_logger import Logger
 # логгер
 logger = Logger('stStartWinLogger').logger
 
+
 class stStartWin(ctk.CTk):
     # все виджеты окна
     def __init__(self):
         super().__init__()
+
+        logger.info('start __init__')
 
         # настройка темы
         ctk.set_appearance_mode('system')
@@ -43,13 +46,16 @@ class stStartWin(ctk.CTk):
         self.btn.place(x=505, y=365)
 
     def chekbox_event(self) -> None:
+        'Обработчик нажатия на чекбокс'
         if self.chekbox.get() == 1:
+            logger.debug('chekbox state = active')
             self.btn.configure(state=ctk.ACTIVE)
         else:
+            logger.debug('chekbox state = disabled')
             self.btn.configure(state=ctk.DISABLED)
 
     def btn_click(self) -> None:
-        pass
+        'обработчик клика кнопки'
 
 
 if __name__ == '__main__':
