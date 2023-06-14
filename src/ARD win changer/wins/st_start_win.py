@@ -1,7 +1,10 @@
 import st_start_win_config as conf
 import customtkinter as ctk
+from wins_logger import Logger
 
 
+# логгер
+logger = Logger('stStartWinLogger').logger
 
 class stStartWin(ctk.CTk):
     # все виджеты окна
@@ -53,4 +56,6 @@ if __name__ == '__main__':
     try:
         stStartWin().mainloop()
     except Exception as exp:
-        pass
+        logger.fatal(exp)
+    finally:
+        logger.info('win has been closed')
