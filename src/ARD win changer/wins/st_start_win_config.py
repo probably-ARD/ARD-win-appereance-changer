@@ -1,6 +1,6 @@
 WIN_NAME = 'Пользовательское соглашение'
 # текст над пользовательским соглашением
 USER_AGREEMENT_CAPTION = 'Для продолжения ознакомтесь с пользовательским соглашением'
-USER_AGREEMENT_TXT = 'эдик гей\n' * 50
+USER_AGREEMENT_TXT = 'текст ' * 50
 USER_AGREEMENT_CHEKBOX_CAPTION = 'Я прочитал и принимаю условия\nпользовательского соглашения'
 USER_AGREEMENT_BTN_TXT = 'продолжить'

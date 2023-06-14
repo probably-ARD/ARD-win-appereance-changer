@@ -2,6 +2,7 @@ import st_start_win_config as conf
 import customtkinter as ctk
 
 
+
 class stStartWin(ctk.CTk):
     # все виджеты окна
     def __init__(self):
